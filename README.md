@@ -1,2 +1,32 @@
-FaceDetection.py
-The Face ID Detection App uses OpenCV to detect and highlight faces in real-time through a webcam. It draws rectangles around detected faces and can save images of them. Ideal for face recognition, security, and authentication, the app is simple, efficient, and easy to set up for various applications.
+# FaceIDApp
+
+**FaceIDApp** is a simple Python project for face detection and recognition using a webcam.
+
+## Features
+
+- Real-time face detection
+- Face recognition of registered users
+- Easy to add new users
+
+## Requirements
+
+- Python 3.x
+- OpenCV
+- face_recognition
+- NumPy
+
+Install dependencies:
+
+```bash
+pip install opencv-python face_recognition numpy
+
+How to Run
+
+    Clone the repository:
+
+git clone https://github.com/AlexandrosMo/FaceDetection.py.git
+cd FaceDetection.py/FaceIDApp
+
+Run the app:
+
+python FaceRecognitionApp.py
