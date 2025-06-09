@@ -46,7 +46,7 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./FaceDetectionApp
+          context: FaceDetectionApp
           file: FaceDetectionApp/Dockerfile
           push: true
           tags: docker.io/alexandromo/demo-app:master-${{ github.sha }}
