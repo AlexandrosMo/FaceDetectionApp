@@ -45,3 +45,11 @@ jobs:
         run: |
           pytest || exit_code=$?; [[ $exit_code == 5 ]] && exit 0 || exit $exit_code
         shell: bash
+
+      - name: Build and Push Docker Image
+        uses: mr-smithers-excellent/docker-build-push@v4
+        with:
+          image: alexandrosmo/demo-app
+          registry: docker.io
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
