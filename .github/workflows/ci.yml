@@ -44,10 +44,11 @@ jobs:
         shell: bash
 
       - name: Build and Push Docker Image
+        if: matrix.os == 'ubuntu-latest'
         uses: mr-smithers-excellent/docker-build-push@v4
         with:
           image: alexandrosmo/demo-app
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          Dockerfile: Dockerfile
+          dockerfile: Dockerfile
