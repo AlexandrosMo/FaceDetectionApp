@@ -8,8 +8,6 @@ WORKDIR /app
 COPY . .
 
 # Install dependencies
-RUN pip install --upgrade pip && \
-    pip install -r requirements.txt
-
+RUN pip install --upgrade pip 
 # Run the app
 CMD ["python", "main.py"]
