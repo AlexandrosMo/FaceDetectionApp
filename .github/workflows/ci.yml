@@ -47,10 +47,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: FaceDetectionApp
-<<<<<<< HEAD
           file: Projects/FaceDetectionApp/dockerfile
-=======
-          file: FaceDetectionApp/DOCKERFILE
->>>>>>> 62e8b381d618783bc0825949493453c923580f9d
           push: true
           tags: docker.io/alexandromo/demo-app:master-${{ github.sha }}
