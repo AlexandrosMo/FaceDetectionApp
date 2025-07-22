@@ -18,15 +18,15 @@
 Install dependencies:
 
 ```bash
-pip install opencv-python face_recognition numpy
 
 How to Run
 
     Clone the repository:
 
-git clone https://github.com/AlexandrosMo/FaceDetection.py.git
-cd FaceDetection.py/FaceIDApp
+git clone https://github.com/AlexandrosMo/FaceDetectionApp.git
+cd FaceDetectionApp
+cd FaceIDApp
 
 Run the app:
 
-python FaceRecognitionApp.py
+python FaceIDApp.py
